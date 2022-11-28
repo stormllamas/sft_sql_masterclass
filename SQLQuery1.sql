@@ -13,7 +13,7 @@ HAVING Count(CASE
 
 	
 SELECT *
-INTO dbo.ProductBackup
+INTO dbo.ProductBackup_20221124
 FROM dbo.Product
 WHERE ModelYear < 2016 OR ModelYear > 2016;
 
