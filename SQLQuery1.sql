@@ -18,7 +18,7 @@ FROM dbo.Product
 WHERE ModelYear < 2016 OR ModelYear > 2016;
 
 
-UPDATE dbo.ProductBackup
+UPDATE dbo.ProductBackup_20221124
 SET ListPrice = ListPrice*1.2
 WHERE
 	BrandId IN (SELECT BrandId FROM dbo.Brand WHERE BrandName='Heller')
